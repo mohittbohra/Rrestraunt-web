@@ -1,0 +1,18 @@
+body {
+    padding-top: 56px;
+}
+
+.main-content {
+    min-height: 400px;
+}
+
+.scrolling-nav {
+    overflow-y: auto;
+    max-height: 300px;
+}
+
+footer {
+    padding: 20px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+}

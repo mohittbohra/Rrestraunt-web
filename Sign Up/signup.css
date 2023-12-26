@@ -1,0 +1,105 @@
+body {
+    background-image: linear-gradient(rgba(171, 171, 206, 0.8), rgba(71, 71, 94, 0.8)), url('Signup.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+}
+
+.container-fluid {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: rgba(0, 0, 50, 0.8);
+    color: #fff;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out; /* Add fade-in animation */
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    animation: slideUp 1s ease-in-out; /* Add slide-up animation */
+}
+
+footer {
+    background-color: rgba(0, 0, 50, 0.8);
+    color: #fff;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out; /* Add fade-in animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.card, .sidebar, .footer, .signup-container {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card, .sidebar, .footer, .signup-container {
+    margin-bottom: 30px;
+}
+
+/* Header styles */
+header {
+    background-color: #005a8e;
+    text-align: center;
+}
+
+header h1 {
+    color: #fff;
+}
+
+/* Signup container styles */
+.signup-container {
+    border-radius: 8px;
+}
+form {
+    overflow: hidden; 
+}
+
+form input,
+form button {
+    transition: all 0.5s ease; /* Increased transition duration */
+    font-size: 16px; /* Adjust font size for input elements */
+}
+
+form input::placeholder {
+    font-size: 14px; /* Adjust font size for placeholder text */
+}
+
+form input:hover,
+form button:hover {
+    background-color: #f0f0f0; /* Change background color on hover */
+    cursor: pointer; /* Add pointer cursor on hover */
+}
+
+
