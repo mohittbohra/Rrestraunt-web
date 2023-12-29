@@ -5,6 +5,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    margin-top: 30px;
 }
 
 .sidebar {
@@ -12,6 +13,7 @@ body {
     background-color: rgba(121, 131, 185, 0.8);
     animation: fadeIn 1s ease-in-out; /* Add fade-in animation */
 }
+
 
 .footer {
     padding: 20px 0;
