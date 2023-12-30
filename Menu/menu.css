@@ -1,66 +1,69 @@
 body {
-  padding-top: 3.5rem; /* Adjusted for the fixed navbar height */
+  padding-top: 3.5rem;
+  background-color: #f8f9fa;
 }
-
-header, footer {
-  background-color: #718090;
+.header{
+  margin-bottom: 0.5rem;
+}
+.header, .footer {
+  background-color: #343a40;
   padding: 1rem 0;
 }
 
 .nav-link {
-  color: rgb(26, 16, 16);
+  color: #1a1010;
 }
 
-main {
+.main {
   padding: 2rem;
 }
 
 .card {
   margin-bottom: 2rem;
-  max-width: 45vw; /* Responsive card width */
+  max-width: 45vw;
+  transition: transform 0.3s ease-in-out;
 }
 
-.scrolling-tabs .nav-tabs {
+.card:hover {
+  transform: scale(1.05);
+}
+
+.nav-tabs {
   display: flex;
 }
 
-.scrolling-tabs .nav-link {
+.nav-link {
   padding: .5rem 1rem;
   border-radius: 0;
   margin-right: 5px;
+  background-color: #ffc107;
+  color: #1a1010;
 }
 
 @media (max-width: 576px) {
-  .scrolling-tabs .nav-link {
-      padding: .5rem .7rem; /* Adjusted padding for smaller screens */
-      font-size: 0.8rem; /* Adjusted font size for smaller screens */
+  .nav-link {
+    padding: .5rem .7rem;
+    font-size: 0.8rem;
   }
-  
-  main {
-      padding: 1rem;
+
+  .main {
+    padding: 1rem;
   }
 }
 
-/* Custom styles for the tab content */
 .tab-content {
   padding: 1rem;
 }
 
 .tab-pane {
-  background-color: #f8f9fa; /* Light gray background */
   border-radius: 5px;
   margin-top: 10px;
   padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Custom styles for the footer */
-footer {
+.footer {
   color: white;
   text-align: center;
-  padding: 1rem 0;
-  background-color: #343a40;
-}
-.card{
-  margin-left: 2vh;
-  
 }
